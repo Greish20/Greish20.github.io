@@ -47,13 +47,12 @@
         /* Grid de Proyectos */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; max-width: 1100px; margin: 50px auto; padding: 0 20px; }
         
-        .card { 
-            background: rgba(0, 0, 0, 0.7); 
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1); 
-            padding: 30px; border-radius: 20px;
-            transition: 0.4s; text-decoration: none; color: white; display: block;
+        .card {
+        background: rgba(40, 20, 25, 0.6); /* Un tono muy oscuro rojizo/rosado */
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 128, 171, 0.3);
         }
+        
         .card:hover { transform: translateY(-10px); background: rgba(0, 0, 0, 0.85); border-color: var(--accent); }
         .card h3 { color: var(--accent); margin-top: 0; }
         .tag { font-size: 0.7rem; background: #222; padding: 4px 8px; border-radius: 10px; color: #aaa; }
