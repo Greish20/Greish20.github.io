@@ -7,17 +7,29 @@
     <style>
         body { background-color: #121212; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 40px; max-width: 800px; margin: 0 auto; }
         h1 { color: #ff80ab; }
-        .box { background: #1e1e1e; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1); }
+        .box { background: #1e1e1e; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1); }
+        .description { margin: 20px 0; border-left: 4px solid #ff80ab; padding-left: 15px; }
         .boton-pdf { display: inline-block; background-color: #ff80ab; color: #121212; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
         .nav { margin-top: 30px; }
-        a { color: #ff80ab; }
+        a { color: #ff80ab; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <h1>Examen Parcial 1</h1>
     
     <div class="box">
-        <p>Documento correspondiente al Primer Examen Parcial de la materia Herramientas de Programación Aplicada IV.</p>
+        <p>Documento correspondiente al Primer Examen Parcial de la materia Herramientas de Programación IV.</p>
+        
+        <div class="description">
+            <h3>Descripción de la actividad:</h3>
+            <p>El examen parcial consistió en el desarrollo integral de un prototipo de aplicación y configuración de redes, estructurado en tres partes:</p>
+            <ul>
+                <li><strong>Parte I (Caso de Estudio):</strong> Desarrollo de un prototipo CRUD en Android Studio para la gestión de actividades del personal de aseo (registro, actualización y eliminación de datos), incluyendo generación de reportes en formato JSON.</li>
+                <li><strong>Parte II (Simulación de Red LAN):</strong> Diseño y configuración de la conectividad de red LAN entre dos centros universitarios (Chiriquí y Veraguas), implementando redundancia en el router secundario.</li>
+                <li><strong>Parte III (Caso de Estudio - Servidor de Datos):</strong> Configuración de una máquina virtual con Linux Mint, incluyendo la implementación de SSH con técnica de Port Knocking (iptables + knockd) para asegurar el acceso remoto al servidor.</li>
+            </ul>
+        </div>
         
         <a href="Examen Parcial1.pdf" class="boton-pdf" target="_blank">
             📎 Descargar Examen Parcial 1 (PDF)
