@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio Práctico 1 | Greishel M. Serrano C.</title>
     <style>
-        body { background-color: #121212; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 40px; max-width: 800px; margin: 0 auto; }
+        body { background-color: #121212; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 40px; max-width: 900px; margin: 0 auto; }
         h1 { color: #ff80ab; }
+        
         .box { background: #1e1e1e; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1); }
-        .boton-pdf { display: inline-block; background-color: #ff80ab; color: #121212; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+        
+        /* Ajuste para el visor de PDF */
+        .pdf-viewer { 
+            width: 100%; 
+            height: 700px; 
+            margin-top: 20px; 
+            border: none; 
+            border-radius: 5px; 
+        }
+        
         .nav { margin-top: 30px; }
-        a { color: #ff80ab; }
+        a { color: #ff80ab; font-weight: bold; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <h1>Ejercicio Práctico 1</h1>
     
     <div class="box">
-        <p>Documento correspondiente al primer ejercicio práctico de la materia Herramientas de Programación Aplicada IV.</p>
+        <p>Visualización del Ejercicio Práctico 1:</p>
         
-        <a href="EjercicioPráctico1_HP_IV.pdf" class="boton-pdf" target="_blank">
-            📎 Descargar Ejercicio Práctico 1 (PDF)
-        </a>
+        <iframe src="EjercicioPráctico1_HP_IV.pdf" class="pdf-viewer"></iframe>
+        
+        <p style="margin-top: 15px;">
+            <a href="EjercicioPráctico1_HP_IV.pdf" target="_blank">📎 Abrir PDF en una pestaña nueva</a>
+        </p>
     </div>
 
     <div class="nav">
