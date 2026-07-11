@@ -3,59 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Greishel M. Serrano C.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Portafolio Profesional | Greishel M. Serrano C.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #ff80ab; --bg: #121212; --card-bg: #1e1e1e; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: #e0e0e0; margin: 0; padding: 40px; }
-        header { text-align: center; margin-bottom: 50px; }
-        h1 { color: var(--primary); margin-bottom: 5px; }
-        .info-academica { color: #888; font-size: 0.9em; }
+        :root { --accent: #ff80ab; --bg-dark: #0a0a0a; --glass: rgba(255, 255, 255, 0.03); }
+        body { font-family: 'Outfit', sans-serif; background-color: var(--bg-dark); color: #fff; margin: 0; padding: 0; }
         
-        /* Grid de proyectos */
-        .project-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 20px; 
-            max-width: 1000px; 
-            margin: 0 auto; 
-        }
+        /* Hero Section */
+        .hero { padding: 100px 20px; text-align: center; background: linear-gradient(180deg, #1a0b12 0%, #0a0a0a 100%); }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; color: var(--accent); }
+        .hero p { font-size: 1.2rem; color: #aaa; max-width: 600px; margin: 0 auto; }
+
+        /* Sección de Proyectos */
+        .section-title { text-align: center; font-size: 2rem; margin: 50px 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto 100px; padding: 0 20px; }
+        
         .card { 
-            background: var(--card-bg); 
-            padding: 20px; 
-            border-radius: 12px; 
-            border: 1px solid #333; 
-            transition: 0.3s;
-            text-decoration: none;
-            color: inherit;
+            background: var(--glass); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 25px;
+            transition: 0.5s ease; text-decoration: none; color: white; display: block;
         }
-        .card:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-        .card h3 { color: var(--primary); margin-top: 0; }
-        .footer { text-align: center; margin-top: 60px; color: #555; font-size: 0.8em; }
+        .card:hover { transform: translateY(-10px); background: rgba(255, 128, 171, 0.08); border-color: var(--accent); }
+        .card h3 { margin-top: 0; color: var(--accent); font-size: 1.5rem; }
+        .tag { font-size: 0.8rem; background: #333; padding: 5px 10px; border-radius: 15px; color: #ddd; }
+
+        .footer { text-align: center; padding: 50px; border-top: 1px solid #222; color: #555; }
     </style>
 </head>
 <body>
 
-<header>
+<section class="hero">
     <h1>Greishel M. Serrano C.</h1>
-    <p class="info-academica">
-        Lic. en Ingeniería de Sistemas y Computación | UTP - CR Chiriquí
-    </p>
-</header>
+    <p>Ingeniera de Sistemas y Computación en formación. Especializada en el desarrollo de soluciones tecnológicas aplicadas y gestión de proyectos académicos en la UTP.</p>
+</section>
 
-<main class="project-grid">
-    <a href="TallerPráctico1/index.html" class="card"><h3>Taller Práctico 1</h3><p>Configuración de entorno y redes.</p></a>
-    <a href="tallerpractico2/index.html" class="card"><h3>Taller Práctico 2</h3><p>App Calculadora Básica.</p></a>
-    <a href="ejerciciopractico1/index.html" class="card"><h3>Ejercicio Práctico 1</h3><p>Asignación académica.</p></a>
-    <a href="EjercicioPractico2/index.html" class="card"><h3>Ejercicio Práctico 2</h3><p>Asignación académica.</p></a>
-    <a href="EjercicioPractico3/index.html" class="card"><h3>Ejercicio Práctico 3</h3><p>Asignación académica.</p></a>
-    <a href="ExamenParcial1/index.html" class="card"><h3>Examen Parcial 1</h3><p>Evaluación parcial.</p></a>
-    <a href="ExamenParcial2/index.html" class="card"><h3>Examen Parcial 2</h3><p>Evaluación parcial.</p></a>
-    <a href="investigacion1/index.html" class="card"><h3>Investigación 1</h3><p>Documento de investigación.</p></a>
-    <a href="investigacion2/index.html" class="card"><h3>Investigación 2</h3><p>Presentación interactiva Prezi.</p></a>
+<h2 class="section-title">Repositorio de Asignaciones</h2>
+
+<main class="grid">
+    <a href="TallerPráctico1/index.html" class="card">
+        <span class="tag">Taller</span> <h3>Taller Práctico 1</h3> <p>Análisis de redes y configuración de entornos de programación.</p>
+    </a>
+    <a href="tallerpractico2/index.html" class="card">
+        <span class="tag">Desarrollo Móvil</span> <h3>Taller Práctico 2</h3> <p>Desarrollo de App (Calculadora) en Android Studio.</p>
+    </a>
+    <a href="ejerciciopractico1/index.html" class="card">
+        <span class="tag">Práctica</span> <h3>Ejercicio Práctico 1</h3> <p>Resolución de ejercicios técnicos de la asignatura.</p>
+    </a>
+    <a href="EjercicioPractico2/index.html" class="card">
+        <span class="tag">Práctica</span> <h3>Ejercicio Práctico 2</h3> <p>Aplicación de criterios de ingeniería de software.</p>
+    </a>
+    <a href="EjercicioPractico3/index.html" class="card">
+        <span class="tag">Práctica</span> <h3>Ejercicio Práctico 3</h3> <p>Implementación técnica y validaciones.</p>
+    </a>
+    <a href="ExamenParcial1/index.html" class="card">
+        <span class="tag">Examen</span> <h3>Examen Parcial 1</h3> <p>Evaluación de competencias teóricas y prácticas.</p>
+    </a>
+    <a href="ExamenParcial2/index.html" class="card">
+        <span class="tag">Examen</span> <h3>Examen Parcial 2</h3> <p>Evaluación de rendimiento avanzado.</p>
+    </a>
+    <a href="investigacion1/index.html" class="card">
+        <span class="tag">Investigación</span> <h3>Investigación 1</h3> <p>Compendio investigativo sobre herramientas.</p>
+    </a>
+    <a href="investigacion2/index.html" class="card">
+        <span class="tag">Investigación</span> <h3>Investigación 2</h3> <p>Análisis interactivo de controles comunes.</p>
+    </a>
 </main>
 
-<div class="footer">&copy; 2026 - Portafolio Académico UTP</div>
+<footer class="footer">&copy; 2026 - Portafolio Académico | UTP CR-Chiriquí</footer>
 
 </body>
 </html>
