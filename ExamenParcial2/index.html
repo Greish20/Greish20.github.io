@@ -7,10 +7,12 @@
     <style>
         body { background-color: #121212; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 40px; max-width: 800px; margin: 0 auto; }
         h1 { color: #ff80ab; }
-        .box { background: #1e1e1e; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1); }
+        .box { background: #1e1e1e; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1); }
+        .description { margin: 20px 0; border-left: 4px solid #ff80ab; padding-left: 15px; }
         .boton-pdf { display: inline-block; background-color: #ff80ab; color: #121212; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
         .nav { margin-top: 30px; }
-        a { color: #ff80ab; }
+        a { color: #ff80ab; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -19,7 +21,17 @@
     <div class="box">
         <p>Documento correspondiente al Segundo Examen Parcial de la materia Herramientas de Programación Aplicada IV.</p>
         
-        <a href="Examen_Parcial2.pdf" class="boton-pdf" target="_blank">
+        <div class="description">
+            <h3>Descripción de la actividad:</h3>
+            <p>Este examen evaluó el diseño de soluciones móviles y la gestión de infraestructura de servidores:</p>
+            <ul>
+                <li><strong>Parte I (Caso de Estudio - Chinos Café):</strong> Desarrollo de una aplicación móvil (CRUD) para la gestión de pedidos de pizzas y combos, incluyendo sincronización y replicación de datos entre bases de datos y confirmaciones automáticas vía JSON/correo.</li>
+                <li><strong>Parte II (Red LAN Inalámbrica):</strong> Diseño y configuración de una topología de red para la conexión entre dos centros universitarios, implementando servicios DHCP, enrutamiento y servidores web Linux en entornos simulados.</li>
+                <li><strong>Parte III (Seguridad y Ataques):</strong> Implementación de medidas de seguridad y ataques controlados, incluyendo la configuración de un servidor web con NGINX (HTTPS), ejecución de ataques de fuerza bruta (Hydra) y escaneo de vulnerabilidades (OWASP ZAP) para fortalecer la infraestructura.</li>
+            </ul>
+        </div>
+        
+        <a href="ExamenParcial2/Examen_Parcial2.pdf" class="boton-pdf" target="_blank">
             📎 Descargar Examen Parcial 2 (PDF)
         </a>
     </div>
