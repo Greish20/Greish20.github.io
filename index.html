@@ -4,36 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Greishel M. Serrano C.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.6; 
-            color: #e0e0e0; 
-            max-width: 800px; 
+        :root { --primary: #ff80ab; --bg: #121212; --card-bg: #1e1e1e; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: #e0e0e0; margin: 0; padding: 40px; }
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { color: var(--primary); margin-bottom: 5px; }
+        .info-academica { color: #888; font-size: 0.9em; }
+        
+        /* Grid de proyectos */
+        .project-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+            max-width: 1000px; 
             margin: 0 auto; 
+        }
+        .card { 
+            background: var(--card-bg); 
             padding: 20px; 
-            background-color: #121212; 
+            border-radius: 12px; 
+            border: 1px solid #333; 
+            transition: 0.3s;
+            text-decoration: none;
+            color: inherit;
         }
-        header { 
-            background: #1e1e1e; 
-            color: #ff80ab; 
-            padding: 25px; 
-            text-align: center; 
-            border-bottom: 3px solid #ff80ab;
-            border-radius: 8px; 
-        }
-        .container { 
-            background: #1e1e1e; 
-            padding: 20px; 
-            margin-top: 20px; 
-            border-radius: 8px; 
-            box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1); 
-        }
-        h2 { color: #ff80ab; border-bottom: 2px solid #ff80ab; padding-bottom: 10px; }
-        a { color: #ff80ab; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-        .info-academica { font-size: 0.95em; color: #b0b0b0; }
-        .footer { text-align: center; margin-top: 40px; font-size: 0.8em; color: #777; }
+        .card:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .card h3 { color: var(--primary); margin-top: 0; }
+        .footer { text-align: center; margin-top: 60px; color: #555; font-size: 0.8em; }
     </style>
 </head>
 <body>
@@ -41,33 +39,23 @@
 <header>
     <h1>Greishel M. Serrano C.</h1>
     <p class="info-academica">
-        Lic. en Ingeniería de Sistemas y Computación | Grupo: 2IL141<br>
-        Universidad Tecnológica de Panamá - Centro Regional de Chiriquí
+        Lic. en Ingeniería de Sistemas y Computación | UTP - CR Chiriquí
     </p>
 </header>
 
-<div class="container">
-    <h2>Portafolio Estudiantil: Herramienta de Programación IV</h2>
-    <p><strong>Docente:</strong> Napoleón Ibarra</p>
-    <p>Bienvenido a mi portafolio digital, donde presento las competencias y proyectos desarrollados durante el semestre.</p>
-    
-    <h3>Proyectos Realizados:</h3>
-    <ul>
-        <li><a href="TallerPráctico1/index.html">Taller Práctico 1</a></li>
-        <li><a href="tallerpractico2/index.html">Taller Práctico 2</a></li>
-        <li><a href="ejerciciopractico1/index.html">Ejercicio Práctico 1</a></li>
-        <li><a href="EjercicioPractico2/index.html">Ejercicio Práctico 2</a></li>
-        <li><a href="EjercicioPractico3/index.html">Ejercicio Práctico 3</a></li>
-        <li><a href="ExamenParcial1/index.html">Examen Parcial 1</a></li>
-        <li><a href="ExamenParcial2/index.html">Examen Parcial 2</a></li>
-        <li><a href="investigacion1/index.html">Investigación 1</a></li>
-        <li><a href="investigacion2/index.html">Investigación 2 (Prezi)</a></li>
-    </ul>
-</div>
+<main class="project-grid">
+    <a href="TallerPráctico1/index.html" class="card"><h3>Taller Práctico 1</h3><p>Configuración de entorno y redes.</p></a>
+    <a href="tallerpractico2/index.html" class="card"><h3>Taller Práctico 2</h3><p>App Calculadora Básica.</p></a>
+    <a href="ejerciciopractico1/index.html" class="card"><h3>Ejercicio Práctico 1</h3><p>Asignación académica.</p></a>
+    <a href="EjercicioPractico2/index.html" class="card"><h3>Ejercicio Práctico 2</h3><p>Asignación académica.</p></a>
+    <a href="EjercicioPractico3/index.html" class="card"><h3>Ejercicio Práctico 3</h3><p>Asignación académica.</p></a>
+    <a href="ExamenParcial1/index.html" class="card"><h3>Examen Parcial 1</h3><p>Evaluación parcial.</p></a>
+    <a href="ExamenParcial2/index.html" class="card"><h3>Examen Parcial 2</h3><p>Evaluación parcial.</p></a>
+    <a href="investigacion1/index.html" class="card"><h3>Investigación 1</h3><p>Documento de investigación.</p></a>
+    <a href="investigacion2/index.html" class="card"><h3>Investigación 2</h3><p>Presentación interactiva Prezi.</p></a>
+</main>
 
-<div class="footer">
-    <p>&copy; 2026 - Portafolio Académico UTP</p>
-</div>
+<div class="footer">&copy; 2026 - Portafolio Académico UTP</div>
 
 </body>
 </html>
