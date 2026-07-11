@@ -1,74 +1,57 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Profesional | Greishel M. Serrano C.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root { --accent: #ff80ab; --bg-dark: #0a0a0a; --glass: rgba(255, 255, 255, 0.03); }
-        body { font-family: 'Outfit', sans-serif; background-color: var(--bg-dark); color: #fff; margin: 0; padding: 0; }
-        
-        /* Hero Section */
-        .hero { padding: 100px 20px; text-align: center; background: linear-gradient(180deg, #1a0b12 0%, #0a0a0a 100%); }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; color: var(--accent); }
-        .hero p { font-size: 1.2rem; color: #aaa; max-width: 600px; margin: 0 auto; }
+<style>
+    /* Estilos para el efecto brillante */
+    .hero-header { text-align: center; padding: 80px 20px; }
+    
+    .badge { 
+        display: inline-block; padding: 8px 20px; border: 1px solid #1e40af; 
+        border-radius: 50px; font-size: 0.8rem; color: #38bdf8; 
+        background: rgba(30, 64, 175, 0.2); margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
 
-        /* Sección de Proyectos */
-        .section-title { text-align: center; font-size: 2rem; margin: 50px 0; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto 100px; padding: 0 20px; }
-        
-        .card { 
-            background: var(--glass); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 25px;
-            transition: 0.5s ease; text-decoration: none; color: white; display: block;
-        }
-        .card:hover { transform: translateY(-10px); background: rgba(255, 128, 171, 0.08); border-color: var(--accent); }
-        .card h3 { margin-top: 0; color: var(--accent); font-size: 1.5rem; }
-        .tag { font-size: 0.8rem; background: #333; padding: 5px 10px; border-radius: 15px; color: #ddd; }
+    .hero-title { 
+        font-size: 3.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 10px;
+    }
+    
+    /* El degradado de colores */
+    .gradient-text {
+        background: linear-gradient(90deg, #fff, #38bdf8, #818cf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-        .footer { text-align: center; padding: 50px; border-top: 1px solid #222; color: #555; }
-    </style>
-</head>
-<body>
+    .hero-subtitle { color: #94a3b8; font-size: 1.2rem; margin-bottom: 40px; }
 
-<section class="hero">
-    <h1>Greishel M. Serrano C.</h1>
-    <p>Ingeniera de Sistemas y Computación en formación. Especializada en el desarrollo de soluciones tecnológicas aplicadas y gestión de proyectos académicos en la UTP.</p>
-</section>
+    /* Cuadrícula de información */
+    .info-grid { 
+        display: grid; grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; max-width: 900px; margin: 0 auto; 
+    }
+    .info-box { 
+        padding: 20px; border: 1px solid #1e293b; border-radius: 15px;
+        background: rgba(15, 23, 42, 0.5);
+    }
+    .info-label { color: #64748b; font-size: 0.75rem; text-transform: uppercase; }
+    .info-value { color: #f1f5f9; font-weight: bold; margin-top: 5px; }
+</style>
 
-<h2 class="section-title">Repositorio de Asignaciones</h2>
+<header class="hero-header">
+    <div class="badge">I SEMESTRE 2026</div>
+    <h1 class="hero-title gradient-text">Organización y Arquitectura de Computadoras</h1>
+    <p class="hero-subtitle">Portafolio Digital de Laboratorios, Investigaciones y Avances Tecnológicos</p>
 
-<main class="grid">
-    <a href="TallerPráctico1/index.html" class="card">
-        <span class="tag">Taller</span> <h3>Taller Práctico 1</h3> <p>Análisis de redes y configuración de entornos de programación.</p>
-    </a>
-    <a href="tallerpractico2/index.html" class="card">
-        <span class="tag">Desarrollo Móvil</span> <h3>Taller Práctico 2</h3> <p>Desarrollo de App (Calculadora) en Android Studio.</p>
-    </a>
-    <a href="ejerciciopractico1/index.html" class="card">
-        <span class="tag">Práctica</span> <h3>Ejercicio Práctico 1</h3> <p>Resolución de ejercicios técnicos de la asignatura.</p>
-    </a>
-    <a href="EjercicioPractico2/index.html" class="card">
-        <span class="tag">Práctica</span> <h3>Ejercicio Práctico 2</h3> <p>Aplicación de criterios de ingeniería de software.</p>
-    </a>
-    <a href="EjercicioPractico3/index.html" class="card">
-        <span class="tag">Práctica</span> <h3>Ejercicio Práctico 3</h3> <p>Implementación técnica y validaciones.</p>
-    </a>
-    <a href="ExamenParcial1/index.html" class="card">
-        <span class="tag">Examen</span> <h3>Examen Parcial 1</h3> <p>Evaluación de competencias teóricas y prácticas.</p>
-    </a>
-    <a href="ExamenParcial2/index.html" class="card">
-        <span class="tag">Examen</span> <h3>Examen Parcial 2</h3> <p>Evaluación de rendimiento avanzado.</p>
-    </a>
-    <a href="investigacion1/index.html" class="card">
-        <span class="tag">Investigación</span> <h3>Investigación 1</h3> <p>Compendio investigativo sobre herramientas.</p>
-    </a>
-    <a href="investigacion2/index.html" class="card">
-        <span class="tag">Investigación</span> <h3>Investigación 2</h3> <p>Análisis interactivo de controles comunes.</p>
-    </a>
-</main>
-
-<footer class="footer">&copy; 2026 - Portafolio Académico | UTP CR-Chiriquí</footer>
-
-</body>
-</html>
+    <div class="info-grid">
+        <div class="info-box">
+            <div class="info-label">Grupo Académico</div>
+            <div class="info-value">2IL141</div>
+        </div>
+        <div class="info-box">
+            <div class="info-label">Grupo de Lab.</div>
+            <div class="info-value">Grupo 4</div>
+        </div>
+        <div class="info-box">
+            <div class="info-label">Docente</div>
+            <div class="info-value">Dra. Yarisol Castillo</div>
+        </div>
+    </div>
+</header>
