@@ -5,40 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investigación 2 | Greishel M. Serrano C.</title>
     <style>
-        body { background-color: #121212; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 40px; max-width: 800px; margin: 0 auto; }
-        h1 { color: #ff80ab; }
-        .box { background: #1e1e1e; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1); }
-        .description { margin: 20px 0; border-left: 4px solid #ff80ab; padding-left: 15px; }
-        .boton-prezi { display: inline-block; background-color: #ff80ab; color: #121212; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
-        .boton-prezi:hover { background-color: #f50057; color: white; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        body { 
+            background-color: #fdf6f7; 
+            color: #4a4a4a; 
+            font-family: 'Segoe UI', sans-serif; 
+            padding: 40px; 
+            display: flex; flex-direction: column; align-items: center;
+        }
+        
+        .box { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 25px; 
+            box-shadow: 0 15px 35px rgba(255, 128, 171, 0.2); 
+            max-width: 700px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        h1 { color: #d81b60; margin-bottom: 5px; }
+        .description { margin: 25px 0; border-left: 5px solid #ff80ab; padding-left: 20px; }
+        
+        .button-group { margin-top: 25px; }
+        
+        .btn { 
+            padding: 12px 25px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            display: inline-block;
+        }
+        .btn:hover { transform: scale(1.05); filter: brightness(1.2); }
+        
+        .btn-prezi { background: #5a31f4; color: white; } /* Color característico de Prezi */
+        
         .nav { margin-top: 30px; }
-        a { color: #ff80ab; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .nav a { color: #d81b60; text-decoration: none; font-weight: bold; }
+        .nav a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Investigación 2: Controles Comunes</h1>
-    
+
     <div class="box">
-        <p>Investigación interactiva correspondiente a la materia Herramientas de Programación Aplicada IV.</p>
+        <h1>Investigación 2: Controles Comunes</h1>
         
         <div class="description">
-            <h3>Descripción de la actividad:</h3>
-            <p>Este trabajo se centró en el estudio de los elementos fundamentales de interfaz de usuario (UI):</p>
+            <p>Investigación interactiva para la materia Herramientas de Programación Aplicada IV:</p>
             <ul>
-                <li><strong>Fundamentos de Controles:</strong> Análisis de los controles comunes en el desarrollo de software (botones, campos de texto, selectores, casillas de verificación, entre otros).</li>
-                <li><strong>Usabilidad y Experiencia:</strong> Evaluación de cómo la implementación correcta de estos controles mejora la interacción del usuario con la aplicación.</li>
-                <li><strong>Estándares de Diseño:</strong> Prácticas recomendadas para la organización y respuesta visual de los elementos en el desarrollo de interfaces responsivas.</li>
+                <li><strong>Fundamentos de Controles:</strong> Análisis de elementos UI (botones, campos de texto, checkboxes, etc.).</li>
+                <li><strong>Usabilidad:</strong> Mejora de la interacción usuario-aplicación mediante controles efectivos.</li>
+                <li><strong>Estándares:</strong> Prácticas recomendadas para interfaces responsivas y visualmente intuitivas.</li>
             </ul>
         </div>
         
-        <a href="https://prezi.com/view/9Rp2mBBLyHQLorkwyCiH/?referral_token=HzsQmOlnB3FN&classId=0e67c350-28f8-4096-b345-79a3ba7cbcf1&assignmentId=2480cdac-d060-47c4-b079-6852a0e7bdbd&submissionId=bc070f39-5496-38cb-7ea1-5e1ac403f9c7/" class="boton-prezi" target="_blank">
-            🌐 Ver presentación en Prezi
-        </a>
+        <div class="button-group">
+            <a href="https://prezi.com/view/9Rp2mBBLyHQLorkwyCiH/?referral_token=HzsQmOlnB3FN&classId=0e67c350-28f8-4096-b345-79a3ba7cbcf1&assignmentId=2480cdac-d060-47c4-b079-6852a0e7bdbd&submissionId=bc070f39-5496-38cb-7ea1-5e1ac403f9c7/" class="btn btn-prezi" target="_blank">🌐 Ver presentación en Prezi</a>
+        </div>
     </div>
 
     <div class="nav">
         <a href="../index.html">← Volver al inicio</a>
     </div>
+
 </body>
 </html>
