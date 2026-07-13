@@ -5,50 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller Práctico 1 | Greishel M. Serrano C.</title>
     <style>
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
         body { 
-            background-color: #121212; 
-            color: #e0e0e0; 
-            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            background-color: #fdf6f7; 
+            color: #4a4a4a; 
+            font-family: 'Segoe UI', sans-serif; 
             padding: 40px; 
-            max-width: 800px; 
-            margin: 0 auto; 
+            display: flex; flex-direction: column; align-items: center;
         }
-        h1, h2 { color: #ff80ab; }
+        
         .box { 
-            background: #1e1e1e; 
-            padding: 20px; 
-            border-radius: 8px; 
-            box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1);
+            background: white; 
+            padding: 40px; 
+            border-radius: 25px; 
+            box-shadow: 0 15px 35px rgba(255, 128, 171, 0.2); 
+            max-width: 700px;
+            animation: fadeIn 0.8s ease-out;
         }
-        .boton-pdf {
+
+        h1 { color: #d81b60; margin-bottom: 5px; }
+        h2 { color: #555; font-size: 1.2rem; }
+        
+        .description { margin: 25px 0; border-left: 5px solid #ff80ab; padding-left: 20px; }
+        
+        .button-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+        
+        .btn { 
+            padding: 12px 20px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
             display: inline-block;
-            background-color: #ff80ab;
-            color: #121212;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 20px;
         }
-        .boton-pdf:hover { background-color: #f50057; color: white; }
+        .btn:hover { transform: scale(1.05); filter: brightness(1.2); }
+        
+        .btn-pdf { background: #ff80ab; color: white; }
+        .btn-pkt { background: #4a90e2; color: white; }
+        
         .nav { margin-top: 30px; }
-        a { color: #ff80ab; }
+        .nav a { color: #d81b60; text-decoration: none; font-weight: bold; }
+        .nav a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Taller Práctico 1: Configuración de Entorno y Redes</h1>
-    
+
     <div class="box">
-        <h2>Descripción del Taller</h2>
-        <p>Se realizó la instalación y configuración de <b>Java JDK 26</b> y <b>Android Studio</b>. Se establecieron las variables de entorno <code>JAVA_HOME</code> y <code>Path</code> para asegurar la correcta ejecución en Windows. Adicionalmente, se diseñó un diagrama de red LAN para la empresa "ABC SISTEMAS, S.A." utilizando Cisco Packet Tracer.</p>
+        <h1>Taller Práctico 1</h1>
+        <h2>Configuración de Entorno y Redes</h2>
         
-    <a href="TallerPráctico1_HP_IV.pdf" class="boton-pdf" target="_blank">
-    📎 Descargar Taller original en PDF
-    </a>
+        <div class="description">
+            <p>Se realizó la instalación y configuración de <b>Java JDK 26</b> y <b>Android Studio</b>, estableciendo variables de entorno (<code>JAVA_HOME</code>, <code>Path</code>) para Windows. Adicionalmente, se diseñó el diagrama de red LAN para "ABC SISTEMAS, S.A.".</p>
+        </div>
+        
+        <div class="button-group">
+            <a href="TallerPráctico1_HP_IV.pdf" class="btn btn-pdf" target="_blank">📎 Informe (PDF)</a>
+            <a href="Laboratorio1.pkt" class="btn btn-pkt">🌐 Red (.pkt)</a>
+        </div>
     </div>
 
     <div class="nav">
         <a href="../index.html">← Volver al inicio</a>
     </div>
+
 </body>
 </html>
