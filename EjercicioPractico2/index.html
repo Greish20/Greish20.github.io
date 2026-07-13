@@ -5,72 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio Práctico 2 | Greishel M. Serrano C.</title>
     <style>
-        /* Estilos generales con el toque femenino y elegante de tu inicio */
+        /* Animación de entrada suave */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
         body { 
-            background-color: #fdf6f7; /* Un tono crema/rosado muy suave */
+            background-color: #fdf6f7; 
             color: #4a4a4a; 
-            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            font-family: 'Segoe UI', sans-serif; 
             padding: 40px; 
-            max-width: 800px; 
-            margin: 0 auto; 
+            display: flex; flex-direction: column; align-items: center;
         }
         
-        /* La caja principal como una tarjeta con sombra suave */
         .box { 
             background: white; 
             padding: 40px; 
-            border-radius: 20px; 
-            box-shadow: 0 10px 30px rgba(255, 128, 171, 0.15); 
-            border: 1px solid rgba(255, 128, 171, 0.2);
+            border-radius: 25px; 
+            box-shadow: 0 15px 35px rgba(255, 128, 171, 0.2); 
+            max-width: 700px;
+            animation: fadeIn 0.8s ease-out; /* Aplicar animación */
         }
 
-        h1 { color: #d81b60; margin-top: 0; }
+        h1 { color: #d81b60; }
         
-        .description { margin: 25px 0; border-left: 5px solid #ff80ab; padding-left: 20px; }
-        
-        /* Botones interactivos con efectos */
-        .button-group { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 30px; }
-        
+        /* Efecto brillante en los botones */
         .btn { 
             padding: 12px 25px; 
-            border-radius: 12px; 
+            border-radius: 50px; /* Botones estilo píldora */
             text-decoration: none; 
             font-weight: 600; 
-            transition: all 0.3s ease; 
-            display: flex; align-items: center; gap: 8px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            display: inline-block;
+            margin: 5px;
         }
         
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .btn:hover { 
+            transform: scale(1.05); /* Efecto zoom suave */
+            filter: brightness(1.2); /* Efecto brillo */
+        }
         
         .btn-pdf { background: #ff80ab; color: white; }
         .btn-pkt { background: #4a90e2; color: white; }
         .btn-zip { background: #28a745; color: white; }
         
-        .nav { margin-top: 40px; }
-        .nav a { color: #d81b60; font-weight: bold; text-decoration: none; }
+        .nav { margin-top: 30px; }
+        .nav a { color: #d81b60; text-decoration: none; font-weight: bold; padding: 10px; }
+        .nav a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
+
     <div class="box">
         <h1>Ejercicio Práctico 2</h1>
-        <div class="description">
-            <h3>Detalles de la entrega:</h3>
-            <p>Este proyecto integra dos áreas críticas de la ingeniería:</p>
-            <ul>
-                <li><strong>App Móvil (Mobil Botica):</strong> Gestión de recargas y transacciones.</li>
-                <li><strong>Simulación de Red:</strong> Topología LAN en Cisco Packet Tracer.</li>
-            </ul>
-        </div>
+        <p>Proyectos técnicos integrados:</p>
         
         <div class="button-group">
             <a href="EjercicioPráctico2.pdf" class="btn btn-pdf" target="_blank">📎 Informe PDF</a>
             <a href="EJERCICIO2.pkt" class="btn btn-pkt">🌐 Red (.pkt)</a>
-            <a href="MobileBotica.zip" class="btn btn-zip">📦 Proyecto App (.zip)</a>
+            <a href="MobileBotica.zip" class="btn btn-zip">📦 App Android (.zip)</a>
         </div>
     </div>
 
     <div class="nav">
         <a href="../index.html">← Volver al inicio</a>
     </div>
+
 </body>
 </html>
