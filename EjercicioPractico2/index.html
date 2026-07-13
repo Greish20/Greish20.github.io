@@ -9,26 +9,38 @@
         h1 { color: #ff80ab; }
         .box { background: #1e1e1e; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1); }
         .description { margin: 20px 0; border-left: 4px solid #ff80ab; padding-left: 15px; }
-        .boton-pdf { display: inline-block; background-color: #ff80ab; color: #121212; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+        
+        /* Contenedor de botones */
+        .button-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        
+        /* Estilos base de botones */
+        .btn { display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; color: #121212; }
+        .btn-pdf { background-color: #ff80ab; }
+        .btn-pkt { background-color: #4a90e2; color: white; }
+        .btn-zip { background-color: #28a745; color: white; }
+        
         .nav { margin-top: 30px; }
         a { color: #ff80ab; }
     </style>
 </head>
 <body>
-    <h1>Ejercicio Práctico 2</h1>
-    
+    <div class="box">
+        <h1>Ejercicio Práctico 2</h1>
+        
         <div class="description">
             <h3>Descripción de la actividad:</h3>
             <p>Este ejercicio se dividió en dos partes fundamentales:</p>
             <ul>
-                <li><strong>Desarrollo de App:</strong> Creación de una aplicación móvil para "Mobil Botica", incluyendo menú de compañías telefónicas (+Movible, TYGO, TLK), gestión de recargas, validación de números y registro de transacciones.</li>
-                <li><strong>Simulación de Red LAN:</strong> Configuración y conectividad de red entre la sucursal 1 (Avenida 2 Este) y sucursal 2 (Plaza San Mateo) utilizando routers y switches en Cisco Packet Tracer.</li>
+                <li><strong>Desarrollo de App:</strong> Creación de una aplicación móvil para "Mobil Botica", incluyendo menú de compañías telefónicas, gestión de recargas y registro de transacciones.</li>
+                <li><strong>Simulación de Red LAN:</strong> Configuración y conectividad de red entre sucursales utilizando Cisco Packet Tracer.</li>
             </ul>
         </div>
         
-        <a href="EjercicioPráctico2.pdf" class="boton-pdf" target="_blank">
-            📎 Descargar Ejercicio Práctico 2 (PDF)
-        </a>
+        <div class="button-group">
+            <a href="EjercicioPráctico2.pdf" class="btn btn-pdf" target="_blank">📎 Informe (PDF)</a>
+            <a href="SimulacionRed.pkt" class="btn btn-pkt">🌐 Red (Packet Tracer)</a>
+            <a href="MobilBoticaApp.zip" class="btn btn-zip">📦 Proyecto App (.zip)</a>
+        </div>
     </div>
 
     <div class="nav">
