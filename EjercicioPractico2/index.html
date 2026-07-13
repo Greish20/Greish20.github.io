@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio Práctico 2 | Greishel M. Serrano C.</title>
     <style>
-        /* Animación de entrada suave */
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         
         body { 
@@ -22,33 +21,29 @@
             border-radius: 25px; 
             box-shadow: 0 15px 35px rgba(255, 128, 171, 0.2); 
             max-width: 700px;
-            animation: fadeIn 0.8s ease-out; /* Aplicar animación */
+            animation: fadeIn 0.8s ease-out;
         }
 
-        h1 { color: #d81b60; }
+        h1 { color: #d81b60; margin-bottom: 5px; }
+        .description { margin: 25px 0; border-left: 5px solid #ff80ab; padding-left: 20px; }
         
-        /* Efecto brillante en los botones */
         .btn { 
             padding: 12px 25px; 
-            border-radius: 50px; /* Botones estilo píldora */
+            border-radius: 50px; 
             text-decoration: none; 
             font-weight: 600; 
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
             display: inline-block;
             margin: 5px;
         }
-        
-        .btn:hover { 
-            transform: scale(1.05); /* Efecto zoom suave */
-            filter: brightness(1.2); /* Efecto brillo */
-        }
+        .btn:hover { transform: scale(1.05); filter: brightness(1.2); }
         
         .btn-pdf { background: #ff80ab; color: white; }
         .btn-pkt { background: #4a90e2; color: white; }
         .btn-zip { background: #28a745; color: white; }
         
         .nav { margin-top: 30px; }
-        .nav a { color: #d81b60; text-decoration: none; font-weight: bold; padding: 10px; }
+        .nav a { color: #d81b60; text-decoration: none; font-weight: bold; }
         .nav a:hover { text-decoration: underline; }
     </style>
 </head>
@@ -56,12 +51,20 @@
 
     <div class="box">
         <h1>Ejercicio Práctico 2</h1>
-        <p>Proyectos técnicos integrados:</p>
+        
+        <div class="description">
+            <h3>Descripción de la actividad:</h3>
+            <p>Este ejercicio se dividió en dos partes fundamentales:</p>
+            <ul>
+                <li><strong>Desarrollo de App:</strong> Creación de una aplicación móvil para "Mobil Botica", incluyendo menú de compañías telefónicas, gestión de recargas y registro de transacciones.</li>
+                <li><strong>Simulación de Red LAN:</strong> Configuración y conectividad de red entre la sucursal 1 (Avenida 2 Este) y sucursal 2 (Plaza San Mateo) utilizando routers y switches en Cisco Packet Tracer.</li>
+            </ul>
+        </div>
         
         <div class="button-group">
-            <a href="EjercicioPráctico2.pdf" class="btn btn-pdf" target="_blank">📎 Informe PDF</a>
+            <a href="EjercicioPráctico2.pdf" class="btn btn-pdf" target="_blank">📎 Informe (PDF)</a>
             <a href="EJERCICIO2.pkt" class="btn btn-pkt">🌐 Red (.pkt)</a>
-            <a href="MobileBotica.zip" class="btn btn-zip">📦 App Android (.zip)</a>
+            <a href="MobileBotica.zip" class="btn btn-zip">📦 Proyecto App (.zip)</a>
         </div>
     </div>
 
