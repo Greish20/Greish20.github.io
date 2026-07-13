@@ -5,41 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio Práctico 2 | Greishel M. Serrano C.</title>
     <style>
-        body { background-color: #121212; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 40px; max-width: 800px; margin: 0 auto; }
-        h1 { color: #ff80ab; }
-        .box { background: #1e1e1e; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(255, 128, 171, 0.1); }
-        .description { margin: 20px 0; border-left: 4px solid #ff80ab; padding-left: 15px; }
+        /* Estilos generales con el toque femenino y elegante de tu inicio */
+        body { 
+            background-color: #fdf6f7; /* Un tono crema/rosado muy suave */
+            color: #4a4a4a; 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            padding: 40px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
         
-        /* Contenedor de botones */
-        .button-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        /* La caja principal como una tarjeta con sombra suave */
+        .box { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(255, 128, 171, 0.15); 
+            border: 1px solid rgba(255, 128, 171, 0.2);
+        }
+
+        h1 { color: #d81b60; margin-top: 0; }
         
-        /* Estilos base de botones */
-        .btn { display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; color: #121212; }
-        .btn-pdf { background-color: #ff80ab; }
-        .btn-pkt { background-color: #4a90e2; color: white; }
-        .btn-zip { background-color: #28a745; color: white; }
+        .description { margin: 25px 0; border-left: 5px solid #ff80ab; padding-left: 20px; }
         
-        .nav { margin-top: 30px; }
-        a { color: #ff80ab; }
+        /* Botones interactivos con efectos */
+        .button-group { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 30px; }
+        
+        .btn { 
+            padding: 12px 25px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.3s ease; 
+            display: flex; align-items: center; gap: 8px;
+        }
+        
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        
+        .btn-pdf { background: #ff80ab; color: white; }
+        .btn-pkt { background: #4a90e2; color: white; }
+        .btn-zip { background: #28a745; color: white; }
+        
+        .nav { margin-top: 40px; }
+        .nav a { color: #d81b60; font-weight: bold; text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="box">
         <h1>Ejercicio Práctico 2</h1>
-        
         <div class="description">
-            <h3>Descripción de la actividad:</h3>
-            <p>Este ejercicio se dividió en dos partes fundamentales:</p>
+            <h3>Detalles de la entrega:</h3>
+            <p>Este proyecto integra dos áreas críticas de la ingeniería:</p>
             <ul>
-                <li><strong>Desarrollo de App:</strong> Creación de una aplicación móvil para "Mobil Botica", incluyendo menú de compañías telefónicas, gestión de recargas y registro de transacciones.</li>
-                <li><strong>Simulación de Red LAN:</strong> Configuración y conectividad de red entre sucursales utilizando Cisco Packet Tracer.</li>
+                <li><strong>App Móvil (Mobil Botica):</strong> Gestión de recargas y transacciones.</li>
+                <li><strong>Simulación de Red:</strong> Topología LAN en Cisco Packet Tracer.</li>
             </ul>
         </div>
         
         <div class="button-group">
-            <a href="EjercicioPráctico2.pdf" class="btn btn-pdf" target="_blank">📎 Informe (PDF)</a>
-            <a href="SimulacionRed.pkt" class="btn btn-pkt">🌐 Red (Packet Tracer)</a>
-            <a href="MobilBoticaApp.zip" class="btn btn-zip">📦 Proyecto App (.zip)</a>
+            <a href="EjercicioPráctico2.pdf" class="btn btn-pdf" target="_blank">📎 Informe PDF</a>
+            <a href="EJERCICIO2.pkt" class="btn btn-pkt">🌐 Red (.pkt)</a>
+            <a href="MobileBotica.zip" class="btn btn-zip">📦 Proyecto App (.zip)</a>
         </div>
     </div>
 
